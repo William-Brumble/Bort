@@ -1,9 +1,6 @@
 // See:
 // https://github.com/DCS-Skunkworks/dcs-bios/blob/master/Scripts/DCS-BIOS/lib/modules/documentation/FixedStepInput.lua
 
-import { InputType } from './dcs-input-type';
+import { IInput } from './dcs-input';
 
-export type IFixedStepInput = {
-    interface: InputType.fixedStep;
-    description: string;
-};
+export interface IFixedStepInput extends IInput {}
