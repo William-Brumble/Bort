@@ -1,9 +1,6 @@
 // See:
 // https://github.com/DCS-Skunkworks/dcs-bios/blob/master/Scripts/DCS-BIOS/lib/modules/documentation/SetStringInput.lua
 
-import { InputType } from './dcs-input-type';
+import { IInput } from './dcs-input';
 
-export type ISetStringInput = {
-    interface: InputType.setString;
-    description: string;
-};
+export interface ISetStringInput extends IInput {}
