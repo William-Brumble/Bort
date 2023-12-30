@@ -1,13 +1,8 @@
 // See:
 // https://github.com/DCS-Skunkworks/dcs-bios/blob/master/Scripts/DCS-BIOS/lib/modules/documentation/StringOutput.lua
 
-import { OutputType } from './dcs-output-type';
-import { Suffix } from './dcs-suffix';
+import { IOutput } from './dcs-output';
 
-export type IStringOutput = {
+export interface IStringOutput extends IOutput {
     maxLength: number;
-    address: number;
-    suffix: Suffix;
-    description: string;
-    type: OutputType.string;
-};
+}
