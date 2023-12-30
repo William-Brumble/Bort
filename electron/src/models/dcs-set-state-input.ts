@@ -1,10 +1,8 @@
 // See:
 // https://github.com/DCS-Skunkworks/dcs-bios/blob/master/Scripts/DCS-BIOS/lib/modules/documentation/SetStateInput.lua
 
-import { InputType } from './dcs-input-type';
+import { IInput } from './dcs-input';
 
-export type ISetStateInput = {
-    interface: InputType.setState;
+export interface ISetStateInput extends IInput {
     maxValue: number;
-    description: string;
-};
+}
